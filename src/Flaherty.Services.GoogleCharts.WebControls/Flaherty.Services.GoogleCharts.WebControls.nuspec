@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Flaherty.Services.GoogleCharts.WebControls</id>
+    <version>$version$</version>
+    <title>Flaherty.Services.GoogleCharts.WebControls</title>
+    <authors>James Flaherty</authors>
+    <owners>James Flaherty</owners>
+    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
+    <projectUrl>https://github.com/flahertyjames/bingmaps-ajax</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library to display Bing Maps in ASP.net web applications.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Bing Maps</tags>
+    <dependencies>
+      <dependency id="Flaherty.Services.GoogleCharts" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="$bin$\v3.5\Flaherty.Services.GoogleCharts.WebControls.dll" target="lib\net35" />
+    <file src="$bin$\v4.5\Flaherty.Services.GoogleCharts.WebControls.dll" target="lib\net45" />
+  </files>
+</package>

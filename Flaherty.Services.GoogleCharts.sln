@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0C2B4CB2-5DD0-47DE-ACC0-55A7EA4FAC9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Services.GoogleCharts", "src\Flaherty.Services.GoogleCharts\Flaherty.Services.GoogleCharts.csproj", "{06E890C0-BDDB-43E1-9917-C363C6894191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Services.GoogleCharts.WebControls.SampleApp", "src\Flaherty.Services.GoogleCharts.WebControls.SampleApp\Flaherty.Services.GoogleCharts.WebControls.SampleApp.csproj", "{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Services.GoogleCharts.WebControls", "src\Flaherty.Services.GoogleCharts.WebControls\Flaherty.Services.GoogleCharts.WebControls.csproj", "{649533A2-0E79-409B-8A00-3099A6DA1099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaherty.Services.GoogleCharts.Tests", "test\Flaherty.Services.GoogleCharts.Tests\Flaherty.Services.GoogleCharts.Tests.csproj", "{B26DD6A2-BD97-410A-86A5-A8B26DF1D324}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8FA45A73-A0B5-4532-BBBF-10E52526C984}"
+	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F343D4E1-75C1-4642-9D98-F6F2D9B6B132}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06E890C0-BDDB-43E1-9917-C363C6894191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E890C0-BDDB-43E1-9917-C363C6894191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E890C0-BDDB-43E1-9917-C363C6894191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E890C0-BDDB-43E1-9917-C363C6894191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1197ED-C03A-4F4A-A5AC-2A079C2EE324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649533A2-0E79-409B-8A00-3099A6DA1099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649533A2-0E79-409B-8A00-3099A6DA1099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649533A2-0E79-409B-8A00-3099A6DA1099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649533A2-0E79-409B-8A00-3099A6DA1099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B26DD6A2-BD97-410A-86A5-A8B26DF1D324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B26DD6A2-BD97-410A-86A5-A8B26DF1D324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B26DD6A2-BD97-410A-86A5-A8B26DF1D324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B26DD6A2-BD97-410A-86A5-A8B26DF1D324}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B26DD6A2-BD97-410A-86A5-A8B26DF1D324} = {0C2B4CB2-5DD0-47DE-ACC0-55A7EA4FAC9E}
+	EndGlobalSection
+EndGlobal

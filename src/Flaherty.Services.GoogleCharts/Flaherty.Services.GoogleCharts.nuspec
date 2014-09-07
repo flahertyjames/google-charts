@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Flaherty.Services.GoogleCharts</id>
+    <version>$version$</version>
+    <title>Flaherty.Services.GoogleCharts</title>
+    <authors>James Flaherty</authors>
+    <owners>James Flaherty</owners>
+    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
+    <projectUrl>https://github.com/flahertyjames/bingmaps-ajax</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Library to generate JavaScript code to display Bing Maps via the AJAX API.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Bing Maps</tags>
+  </metadata>
+  <files>
+    <file src="$bin$\v3.5\Flaherty.Services.GoogleCharts.dll" target="lib\net35" />
+    <file src="$bin$\v4.5\Flaherty.Services.GoogleCharts.dll" target="lib\net45" />
+  </files>
+</package>

@@ -15,11 +15,15 @@ namespace Flaherty.Services.GoogleCharts
     public interface IChartOptions
     {
         /// <summary>
-        /// Applies a palette to the options.
+        /// Gets the default colors for the chart.
         /// </summary>
-        /// <param name="palette">
-        /// The palette.
-        /// </param>
-        void ApplyPalette(IPalette palette);
+        // ReSharper disable once UnusedMember.Global
+        Palette Colors { get; }
+
+        /// <summary>
+        /// Gets the chart title.
+        /// </summary>
+        // ReSharper disable once UnusedMember.Global
+        string Title { get; }
     }
 }

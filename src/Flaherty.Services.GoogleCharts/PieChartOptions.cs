@@ -10,7 +10,6 @@
 namespace Flaherty.Services.GoogleCharts
 {
     using System.Collections.Generic;
-    using System.Drawing;
 
     using Newtonsoft.Json;
 
@@ -55,31 +54,5 @@ namespace Flaherty.Services.GoogleCharts
         /// </summary>
         [JsonProperty("slices")]
         public Dictionary<int, PieChartSliceOptions> Slices { get; private set; }
-
-        /// <summary>
-        /// Applies a supplied palette to the options object.
-        /// </summary>
-        /// <param name="palette">
-        /// The palette.
-        /// </param>
-        public override void ApplyPalette(IPalette palette)
-        {
-            var i = 0;
-            foreach (Color color in palette.Colors)
-            {
-                if (!this.Slices.ContainsKey(i))
-                {
-                    this.Slices.Add(i, new PieChartSliceOptions());
-                }
-
-                var slice = this.Slices[i];
-                if (!slice.Color.HasValue)
-                {
-                    slice.Color = color;
-                }
-
-                i++;
-            }
-        }
     }
 }

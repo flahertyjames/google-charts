@@ -17,7 +17,6 @@ namespace Flaherty.Services.GoogleCharts.WebControls
     using System.Web.UI.WebControls;
 
     using Flaherty.Services.GoogleCharts;
-    using Flaherty.Services.GoogleCharts.Converters;
 
     /// <summary>
     /// Control for rendering a Google Charts pie chart in an ASP.net web application.
@@ -32,7 +31,6 @@ namespace Flaherty.Services.GoogleCharts.WebControls
         {
             this.Type = ChartType.PieChart;
             this.Options = new PieChartOptions();
-            this.Palette = new Palette();
             this.Init += this.Chart_Init;
         }
 
@@ -58,13 +56,6 @@ namespace Flaherty.Services.GoogleCharts.WebControls
         public DataTable DataSource { get; set; }
 
         /// <summary>
-        /// Gets or sets the palette.
-        /// </summary>
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        [TypeConverter(typeof(PaletteConverter))]
-        public Palette Palette { get; set; }
-
-        /// <summary>
         /// Gets or sets the options.
         /// </summary>
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
@@ -75,6 +66,7 @@ namespace Flaherty.Services.GoogleCharts.WebControls
         /// </summary>
         [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1623:PropertySummaryDocumentationMustMatchAccessors", Justification = "Reviewed. Suppression is OK here.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        [NotifyParentProperty(true)]
         [PersistenceMode(PersistenceMode.InnerProperty)]
         public PieChartSlice Slice
         {
@@ -90,17 +82,6 @@ namespace Flaherty.Services.GoogleCharts.WebControls
                     this.Options.Slices.Add(value.Index, slice);
                 }
             }
-        }
-
-        /// <summary>
-        /// Gets the palette as an interface.
-        /// </summary>
-        /// <returns>
-        /// The <see cref="IPalette"/>.
-        /// </returns>
-        public IPalette GetPalette()
-        {
-            return this.Palette;
         }
 
         /// <summary>

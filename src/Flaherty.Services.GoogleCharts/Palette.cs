@@ -12,11 +12,11 @@ namespace Flaherty.Services.GoogleCharts
     using System.Collections.Generic;
     using System.Drawing;
     using System.Linq;
-
+    
     /// <summary>
     /// Object to describe a collection of colors for use in rendering a chart.
     /// </summary>
-    public class Palette : IPalette
+    public class Palette : List<Color>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Palette"/> class.
@@ -26,13 +26,8 @@ namespace Flaherty.Services.GoogleCharts
         /// </param>
         public Palette(params Color[] colors)
         {
-            this.Colors = colors;
+            this.AddRange(colors);
         }
-
-        /// <summary>
-        /// Gets or sets the colors associated with the palette.
-        /// </summary>
-        public IEnumerable<Color> Colors { get; set; }
 
         /// <summary>
         /// Parses a string of colors and returns a palette.
@@ -57,7 +52,7 @@ namespace Flaherty.Services.GoogleCharts
         /// </returns>
         public override string ToString()
         {
-            return string.Join(",", this.Colors.Select(ColorTranslator.ToHtml));
+            return string.Join(",", this.Select(ColorTranslator.ToHtml));
         }
     }
 }

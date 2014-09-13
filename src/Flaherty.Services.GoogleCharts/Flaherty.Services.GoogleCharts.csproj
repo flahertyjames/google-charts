@@ -53,7 +53,6 @@
     <Compile Include="Converters\PaletteConverter.cs" />
     <Compile Include="IChart.cs" />
     <Compile Include="IChartOptions.cs" />
-    <Compile Include="IPalette.cs" />
     <Compile Include="Json\ColorConverter.cs" />
     <Compile Include="Json\DataTableConverter.cs" />
     <Compile Include="ChartType.cs" />

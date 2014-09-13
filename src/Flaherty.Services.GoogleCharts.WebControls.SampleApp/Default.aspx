@@ -21,8 +21,9 @@
             <Slice Index="1" Color="#ff0000" />
             <Slice Index="2" Offset="0.2" />
         </google:PieChart>
-        <google:PieChart ID="PieChart6" runat="server" 
-                         Options-Title="My Daily Activities" Palette="Red,Blue,Green,#fff000" Width="900" Height="500" />
+        <google:PieChart ID="PieChart6" runat="server" Width="900" Height="500">
+            <Options Title="My Daily Activities" Colors="Red,Blue,Green,#999000,Chocolate" />
+        </google:PieChart>
     </form>
 </body>
 </html>

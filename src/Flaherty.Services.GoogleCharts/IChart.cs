@@ -32,14 +32,6 @@ namespace Flaherty.Services.GoogleCharts
         DataTable DataSource { get; }
 
         /// <summary>
-        /// Gets the palette.
-        /// </summary>
-        /// <returns>
-        /// The <see cref="IPalette"/>.
-        /// </returns>
-        IPalette GetPalette();
-
-        /// <summary>
         /// Gets the options.
         /// </summary>
         /// <returns>

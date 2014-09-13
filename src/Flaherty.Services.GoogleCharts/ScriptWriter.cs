@@ -50,12 +50,6 @@ namespace Flaherty.Services.GoogleCharts
             var data = JsonConvert.SerializeObject(this.chart.DataSource, new Json.DataTableConverter());
             script.AppendLine(string.Format("\t\tvar data = google.visualization.arrayToDataTable({0});", data));
 
-            // apply the palette
-            if (this.chart.GetPalette() != null)
-            {
-                this.chart.GetOptions().ApplyPalette(this.chart.GetPalette());
-            }
-
             // serialize options
             var options = JsonConvert.SerializeObject(this.chart.GetOptions());
             script.AppendLine(string.Format("\t\tvar options = {0};", options));
